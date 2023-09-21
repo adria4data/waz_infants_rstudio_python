@@ -1,0 +1,48 @@
+---
+title: "Connect RStudio to Python"
+author: "Adrian Rus"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Here are the steps to connect RStudio to Python:
+
+1. Install R and RStudio: Make sure you have both R and RStudio installed on your computer. You can download and install them from their official websites.
+
+2. Install Python: Ensure you have Python installed on your system. You can download Python from the official Python website or use a distribution like Anaconda, which includes many scientific libraries.
+
+3. Install Reticulate Package: Open RStudio and create a new R script or R Markdown document. In the R script, install the "reticulate" package if you haven't already. You can do this with the following command:
+
+```{r}
+install.packages("reticulate")
+```
+
+4. Load the Reticulate Package: Load the "reticulate" package by using the library 
+
+```{r}
+library(reticulate)
+
+```
+
+5. Test Python Integration: To test if Python is integrated correctly, you can run a simple Python command from your R script:
+
+```{r}
+py_run_string("print('Hello from Python!')")
+
+```
+
+6. Running Python Code: You can now use Python code in your RStudio environment. Simply use the py_run_string or py_run_file functions to execute Python code.
+
+For example:
+
+```{r}
+result <- py_run_string("2 + 2")
+print(result)
+
+```
+
+################################################################################# 
