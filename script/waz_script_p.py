@@ -1,4 +1,4 @@
-# Predictors of Weight in RomanianInfants: Weight-for-age z-scores (WAZ)
+# Predictors of Weight in Romanian Infants: Weight-for-age z-scores (WAZ)
 # Adrian Rus
 
 # September 2023
