@@ -65,7 +65,7 @@ from scipy import stats
 import pandas as pd
 
 
-# Your previous code for computing statistics
+# The code for computing statistics
 count = WAZdata['cWageZ'].count()
 missing = WAZdata['cWageZ'].isna().sum()
 mean = WAZdata['cWageZ'].mean()
